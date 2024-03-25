@@ -7,6 +7,11 @@ import {
   fetchLatestInvoices,
   fetchCardData,
 } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home'
+}
 
 export default async function Page() {
   const revenue = await fetchRevenue();
